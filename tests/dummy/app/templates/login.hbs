@@ -1,0 +1,15 @@
+<div class="login-container">
+    <h3>Login as</h3>
+    <div class="login-container__items">
+        {{#each this.model key="id" as |user|}}
+            <div class="login-container__item{{if (eq this.acl.user user) " highlight"}}">
+                <div class="login-container__user">
+                    <strong>{{ user.name }}</strong>  <a href="javascript:void(0)" onclick={{fn this.login user}}>login</a>
+                </div>
+                <div class="login-container__roles" title="roles">
+                    {{join ", " (map-by "name" user.roles)}}
+                </div>
+            </div>
+        {{/each}}
+    </div>
+</div>

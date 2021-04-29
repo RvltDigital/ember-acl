@@ -1,0 +1,128 @@
+/*
+ * Content
+ */
+
+.content {
+    display: flex;
+}
+
+.content__aside {
+    width: 200px;
+    border-right: 1px solid gray;
+}
+
+.content__main {
+    flex: 1 1 auto;
+}
+
+.content__main-title {
+    text-align: center;
+}
+
+
+/*
+ * Nav
+ */
+
+.nav {
+    margin-bottom: 20px;
+}
+
+.nav__title {
+    margin-top: 0;
+    text-decoration: underline;
+}
+
+.nav__item {
+    padding: 5px 0;
+}
+
+/*
+ * Visibility
+ */
+
+.visibility__title {
+    margin-top: 0;
+    text-decoration: underline;
+}
+
+.visibility__content {
+    color: gray;
+    font-weight: bold;
+}
+
+.visibility__item {
+    padding: 5px 0;
+}
+
+.visibility__content--active {
+    color: green;
+}
+
+
+
+/*
+ * Header
+ */
+
+.header {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.header__title {
+    margin-top: 0;
+    flex: 1 1 auto;
+}
+
+/*
+ * User Widget
+ */
+
+.user-widget {
+    padding: 10px;
+    cursor: default;
+    text-align: right;
+}
+
+
+/*
+ * Login Container
+ */
+
+.login-container {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.login-container h3 {
+    text-align: center;
+}
+
+.login-container__items {
+    border: 1px solid gray;
+    padding: 5px
+}
+
+.login-container__item {
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.login-container__item.highlight {
+    background: yellow;
+}
+
+.login-container__user {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.login-container__user > strong {
+    flex: 1 1 auto;
+}
+
+.login-container__roles {
+    color: gray;
+    text-align: right
+}
